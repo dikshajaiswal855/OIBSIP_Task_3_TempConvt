@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CFC</title>
+</head>
+<body>
+    <div class="outer-box">
+        <div class="inner-box">
+            <header class="signup-header">
+                <h1>Temperature Converter</h1>
+            </header><br>
+            <div class="val">
+            <input type="number" id="temperature" placeholder="Enter temperature" required></div><br>
+            <div class="cf">
+            <select id="unit"  >
+                <option value="">🌡</option>
+                <option class="styl" value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select></div>
+            <br>
+            <div class="butt"><button value="Convert" onclick="convertTemperature()">Convert</button></div>
+            <div class="result" id="result"></div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
